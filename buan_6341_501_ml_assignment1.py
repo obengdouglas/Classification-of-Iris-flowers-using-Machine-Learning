@@ -78,10 +78,13 @@ from sklearn.tree import DecisionTreeClassifier
 """#Load dataset into dataframe"""
 
 irisdata = 'https://raw.githubusercontent.com/obengdouglas/UTD-BUAN6341_AppliedML/main/Assignment1-Building_a_test_model/IRIS_modified.csv' #save url of modified dataset location as object
-
 #irisdata = 'https://raw.githubusercontent.com/obengdouglas/UTD-BUAN6341_AppliedML/blob/main/Assignment1-Building_a_test_model/IRIS.csv' #uncomment this line to use complete dataset
 
 iris.df = pd.read_csv(irisdata) #read data
+
+#This works fine in colab. in case of any issues, read the included dataset from your local directory
+#iris.df = pd.read_csv('Desktop/Github/UTD-BUAN6341_AppliedML/Assignment1-Building_a_test_model/IRIS_modified.csv') #replace with local directory of dataset
+
 iris.df #view dataframe
 
 """# Data Cleaning
